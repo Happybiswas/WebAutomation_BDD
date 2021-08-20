@@ -1,0 +1,20 @@
+[
+  {
+    "source": "I am on HealthCare.Com Website",
+    "steps": [
+      {
+        "name": "I am on HealthCare.Com Website",
+        "aggregatedDurations": {
+          "median": 2.337001,
+          "average": 2.337001
+        },
+        "durations": [
+          {
+            "duration": 2.337001,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/gov.healthcare/src/test/java/features/HomePage.feature:5"
+          }
+        ]
+      }
+    ]
+  }
+]

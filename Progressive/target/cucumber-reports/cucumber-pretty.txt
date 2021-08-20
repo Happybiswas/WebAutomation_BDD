@@ -1,0 +1,114 @@
+
+@smokeTest
+Scenario: Explore product on Progressive website                 # src/test/java/features/ProgressiveHomePage.feature:6
+  Given I am on the Progressive Homepage                         # stepDefinitions.proHomePageStepDefinition.i_am_on_the_progressive_homepage()
+  When I click on Explore product                                # stepDefinitions.proHomePageStepDefinition.i_click_on_explore_product()
+  Then I should see "Vehicle" product                            # stepDefinitions.proHomePageStepDefinition.i_should_see_vehical_product(java.lang.String)
+  And I verify "Explore Products" title is present on that page. # stepDefinitions.proHomePageStepDefinition.i_verify_explore_product_title_is_present_on_that_page(java.lang.String)
+
+@anindya
+Scenario: Enter Personal Information to get the Auto Code # src/test/java/features/ProgressiveHomePage.feature:22
+  Given I am on the Progressive Homepage                  # stepDefinitions.proHomePageStepDefinition.i_am_on_the_progressive_homepage()
+  When I click on Auto Link                               # stepDefinitions.proHomePageStepDefinition.i_click_on_auto_link()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@data-tracking-label='auto_section']//span[@class='last-word']"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAPAN-PC3', ip: '192.168.1.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95e7ab4de22d77349bb8d6240237bdc4
+*** Element info: {Using=xpath, value=//a[@data-tracking-label='auto_section']//span[@class='last-word']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
+	at homepageProgressive.ProHomePage.AutoClickCase(ProHomePage.java:90)
+	at stepDefinitions.proHomePageStepDefinition.i_click_on_auto_link(proHomePageStepDefinition.java:69)
+	at ✽.I click on Auto Link(file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:24)
+
+
+    Embedding demo2 [image/png 613677 bytes]
+
+  Then I should see "AUTO" Text                           # stepDefinitions.proHomePageStepDefinition.i_should_see_auto_text(java.lang.String)
+  Then I enter ZipCode                                    # stepDefinitions.proHomePageStepDefinition.i_enter_zip_code()
+  Then I click on Get a quote link                        # stepDefinitions.proHomePageStepDefinition.i_click_on_get_a_quote_link()
+  Then I verify "Name & Birthdate" on that page           # stepDefinitions.proHomePageStepDefinition.i_verify_name_birthdate_on_that_page(java.lang.String)
+  Then I enter First Name                                 # stepDefinitions.proHomePageStepDefinition.i_enter_first_name()
+  Then I enter Last Name                                  # stepDefinitions.proHomePageStepDefinition.i_enter_last_name()
+  Then I click suffix and select Sr                       # stepDefinitions.proHomePageStepDefinition.i_click_suffix_and_select_sr()
+
+@RegressionTest
+Scenario: Login to My Progressive Account  # src/test/java/features/ProgressiveHomePage.feature:35
+  Given I am on the Progressive Homepage   # stepDefinitions.proHomePageStepDefinition.i_am_on_the_progressive_homepage()
+  When I click on login Button             # stepDefinitions.proHomePageStepDefinition.i_click_on_login_button()
+  Then I should see "Welcome" on that page # stepDefinitions.proHomePageStepDefinition.i_should_see_on_that_page(java.lang.String)
+  Then I enter user ID                     # stepDefinitions.proHomePageStepDefinition.i_enter_user_id()
+  And I enter Password                     # stepDefinitions.proHomePageStepDefinition.i_enter_password()
+  Then I click on login link               # stepDefinitions.proHomePageStepDefinition.i_click_on_login_link()
+
+@RegressionTest1
+Scenario: Enter claim to get the Claim Information       # src/test/java/features/ProgressiveHomePage.feature:44
+  Given I am on the Progressive Homepage                 # stepDefinitions.proHomePageStepDefinition.i_am_on_the_progressive_homepage()
+  When I click on Claim button                           # stepDefinitions.proHomePageStepDefinition.i_click_on_claim_button()
+  Then I should see  "Claims" Text                       # stepDefinitions.proHomePageStepDefinition.i_should_see_text(java.lang.String)
+  And I click on Claim overview                          # stepDefinitions.proHomePageStepDefinition.i_click_on_claim_overview()
+  Then I verify "Progressive claims" appears on the page # stepDefinitions.proHomePageStepDefinition.i_verify_progressive_claims_appears_on_the_page(java.lang.String)
+
+@RegressionTest2
+Scenario: Review customers Answers                                        # src/test/java/features/ProgressiveHomePage.feature:52
+  Given I am on the Progressive Homepage                                  # stepDefinitions.proHomePageStepDefinition.i_am_on_the_progressive_homepage()
+  When I am click on the Answer button                                    # stepDefinitions.proHomePageStepDefinition.i_am_click_on_the_answer_button()
+  Then I will see "Progressive Answers"                                   # stepDefinitions.proHomePageStepDefinition.i_will_see(java.lang.String)
+  And I click on see all topic button                                     # stepDefinitions.proHomePageStepDefinition.i_click_on_see_all_topic_button()
+  Then I click Am i covered                                               # stepDefinitions.proHomePageStepDefinition.i_click_am_i_covered()
+  Then I click how renters insurance cover theft image                    # stepDefinitions.proHomePageStepDefinition.i_click_how_renters_insurance_cover_theft_image()
+  Then i verify "Does renters insurance cover theft?" appears on the page # stepDefinitions.proHomePageStepDefinition.i_verify_appears_on_the_page(java.lang.String)
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="site"]/div[2]/header/div/div/div[1]/div/h1"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAPAN-PC3', ip: '192.168.1.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bf714ed734dbf6251e60b5dbe3ef404
+*** Element info: {Using=xpath, value=//*[@id="site"]/div[2]/header/div/div/div[1]/div/h1}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getText(Unknown Source)
+	at homepageProgressive.ProHomePage.getRenterInsuranceCoverTheftLocatorTextOn(ProHomePage.java:236)
+	at stepDefinitions.proHomePageStepDefinition.i_verify_appears_on_the_page(proHomePageStepDefinition.java:196)
+	at ✽.i verify "Does renters insurance cover theft?" appears on the page(file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:59)
+
+
+    Embedding demo2 [image/png 312725 bytes]
+

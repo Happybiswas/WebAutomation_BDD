@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="96.226">
+    <testcase classname="Progressive Product search" name="Explore product on Progressive website" time="8.337">
+        <system-out><![CDATA[Given I am on the Progressive Homepage......................................passed
+When I click on Explore product.............................................passed
+Then I should see "Vehicle" product.........................................passed
+And I verify "Explore Products" title is present on that page...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Progressive Product search" name="Enter Personal Information to get the Auto Code" time="23.936">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-tracking-label='auto_section']//span[@class='last-word']&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'TAPAN-PC3', ip: '192.168.1.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 95e7ab4de22d77349bb8d6240237bdc4&#10;*** Element info: {Using=xpath, value=//a[@data-tracking-label='auto_section']//span[@class='last-word']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given I am on the Progressive Homepage......................................passed
+When I click on Auto Link...................................................failed
+Then I should see "AUTO" Text...............................................skipped
+Then I enter ZipCode........................................................skipped
+Then I click on Get a quote link............................................skipped
+Then I verify "Name & Birthdate" on that page...............................skipped
+Then I enter First Name.....................................................skipped
+Then I enter Last Name......................................................skipped
+Then I click suffix and select Sr...........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@data-tracking-label='auto_section']//span[@class='last-word']"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAPAN-PC3', ip: '192.168.1.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95e7ab4de22d77349bb8d6240237bdc4
+*** Element info: {Using=xpath, value=//a[@data-tracking-label='auto_section']//span[@class='last-word']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
+	at homepageProgressive.ProHomePage.AutoClickCase(ProHomePage.java:90)
+	at stepDefinitions.proHomePageStepDefinition.i_click_on_auto_link(proHomePageStepDefinition.java:69)
+	at ✽.I click on Auto Link(file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:24)
+]]></failure>
+    </testcase>
+    <testcase classname="Progressive Product search" name="Login to My Progressive Account" time="12.26">
+        <system-out><![CDATA[Given I am on the Progressive Homepage......................................passed
+When I click on login Button................................................passed
+Then I should see "Welcome" on that page....................................passed
+Then I enter user ID........................................................passed
+And I enter Password........................................................passed
+Then I click on login link..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Progressive Product search" name="Enter claim to get the Claim Information" time="12.49">
+        <system-out><![CDATA[Given I am on the Progressive Homepage......................................passed
+When I click on Claim button................................................passed
+Then I should see  "Claims" Text............................................passed
+And I click on Claim overview...............................................passed
+Then I verify "Progressive claims" appears on the page......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Progressive Product search" name="Review customers Answers" time="38.854">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;site&quot;]/div[2]/header/div/div/div[1]/div/h1&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'TAPAN-PC3', ip: '192.168.1.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4bf714ed734dbf6251e60b5dbe3ef404&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;site&quot;]/div[2]/header/div/div/div[1]/div/h1}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given I am on the Progressive Homepage......................................passed
+When I am click on the Answer button........................................passed
+Then I will see "Progressive Answers".......................................passed
+And I click on see all topic button.........................................passed
+Then I click Am i covered...................................................passed
+Then I click how renters insurance cover theft image........................passed
+Then i verify "Does renters insurance cover theft?" appears on the page.....failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="site"]/div[2]/header/div/div/div[1]/div/h1"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAPAN-PC3', ip: '192.168.1.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bf714ed734dbf6251e60b5dbe3ef404
+*** Element info: {Using=xpath, value=//*[@id="site"]/div[2]/header/div/div/div[1]/div/h1}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getText(Unknown Source)
+	at homepageProgressive.ProHomePage.getRenterInsuranceCoverTheftLocatorTextOn(ProHomePage.java:236)
+	at stepDefinitions.proHomePageStepDefinition.i_verify_appears_on_the_page(proHomePageStepDefinition.java:196)
+	at ✽.i verify "Does renters insurance cover theft?" appears on the page(file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:59)
+]]></failure>
+    </testcase>
+</testsuite>

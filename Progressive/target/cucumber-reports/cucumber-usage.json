@@ -1,0 +1,342 @@
+[
+  {
+    "source": "I am on the Progressive Homepage",
+    "steps": [
+      {
+        "name": "I am on the Progressive Homepage",
+        "aggregatedDurations": {
+          "median": 2.9157656,
+          "average": 2.86608788
+        },
+        "durations": [
+          {
+            "duration": 3.1780046,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:7"
+          },
+          {
+            "duration": 2.7138324,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:23"
+          },
+          {
+            "duration": 2.9157656,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:36"
+          },
+          {
+            "duration": 2.6069537,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:45"
+          },
+          {
+            "duration": 2.9158831,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:53"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Explore product",
+    "steps": [
+      {
+        "name": "I click on Explore product",
+        "aggregatedDurations": {
+          "median": 0.2962398,
+          "average": 0.2962398
+        },
+        "durations": [
+          {
+            "duration": 0.2962398,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see {string} product",
+    "steps": [
+      {
+        "name": "I should see \"Vehicle\" product",
+        "aggregatedDurations": {
+          "median": 2.0379672,
+          "average": 2.0379672
+        },
+        "durations": [
+          {
+            "duration": 2.0379672,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify {string} title is present on that page.",
+    "steps": [
+      {
+        "name": "I verify \"Explore Products\" title is present on that page.",
+        "aggregatedDurations": {
+          "median": 2.034756,
+          "average": 2.034756
+        },
+        "durations": [
+          {
+            "duration": 2.034756,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on login Button",
+    "steps": [
+      {
+        "name": "I click on login Button",
+        "aggregatedDurations": {
+          "median": 0.1821942,
+          "average": 0.1821942
+        },
+        "durations": [
+          {
+            "duration": 0.1821942,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see {string} on that page",
+    "steps": [
+      {
+        "name": "I should see \"Welcome\" on that page",
+        "aggregatedDurations": {
+          "median": 2.1034285,
+          "average": 2.1034285
+        },
+        "durations": [
+          {
+            "duration": 2.1034285,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter user ID",
+    "steps": [
+      {
+        "name": "I enter user ID",
+        "aggregatedDurations": {
+          "median": 2.1187455,
+          "average": 2.1187455
+        },
+        "durations": [
+          {
+            "duration": 2.1187455,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter Password",
+    "steps": [
+      {
+        "name": "I enter Password",
+        "aggregatedDurations": {
+          "median": 2.1776452,
+          "average": 2.1776452
+        },
+        "durations": [
+          {
+            "duration": 2.1776452,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on login link",
+    "steps": [
+      {
+        "name": "I click on login link",
+        "aggregatedDurations": {
+          "median": 2.0849408,
+          "average": 2.0849408
+        },
+        "durations": [
+          {
+            "duration": 2.0849408,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:41"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Claim button",
+    "steps": [
+      {
+        "name": "I click on Claim button",
+        "aggregatedDurations": {
+          "median": 2.1034181,
+          "average": 2.1034181
+        },
+        "durations": [
+          {
+            "duration": 2.1034181,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see  {string} Text",
+    "steps": [
+      {
+        "name": "I should see  \"Claims\" Text",
+        "aggregatedDurations": {
+          "median": 2.0279529,
+          "average": 2.0279529
+        },
+        "durations": [
+          {
+            "duration": 2.0279529,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Claim overview",
+    "steps": [
+      {
+        "name": "I click on Claim overview",
+        "aggregatedDurations": {
+          "median": 3.0415162,
+          "average": 3.0415162
+        },
+        "durations": [
+          {
+            "duration": 3.0415162,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify {string} appears on the page",
+    "steps": [
+      {
+        "name": "I verify \"Progressive claims\" appears on the page",
+        "aggregatedDurations": {
+          "median": 2.0330731,
+          "average": 2.0330731
+        },
+        "durations": [
+          {
+            "duration": 2.0330731,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am click on the Answer button",
+    "steps": [
+      {
+        "name": "I am click on the Answer button",
+        "aggregatedDurations": {
+          "median": 2.0885561,
+          "average": 2.0885561
+        },
+        "durations": [
+          {
+            "duration": 2.0885561,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:54"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I will see {string}",
+    "steps": [
+      {
+        "name": "I will see \"Progressive Answers\"",
+        "aggregatedDurations": {
+          "median": 2.0403044,
+          "average": 2.0403044
+        },
+        "durations": [
+          {
+            "duration": 2.0403044,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on see all topic button",
+    "steps": [
+      {
+        "name": "I click on see all topic button",
+        "aggregatedDurations": {
+          "median": 4.3592565,
+          "average": 4.3592565
+        },
+        "durations": [
+          {
+            "duration": 4.3592565,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:56"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click Am i covered",
+    "steps": [
+      {
+        "name": "I click Am i covered",
+        "aggregatedDurations": {
+          "median": 2.2300334,
+          "average": 2.2300334
+        },
+        "durations": [
+          {
+            "duration": 2.2300334,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:57"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click how renters insurance cover theft image",
+    "steps": [
+      {
+        "name": "I click how renters insurance cover theft image",
+        "aggregatedDurations": {
+          "median": 2.0967003,
+          "average": 2.0967003
+        },
+        "durations": [
+          {
+            "duration": 2.0967003,
+            "location": "file:///F:/PNTSelenium/SeleniumRepo/BDD_Automation_Framework_Team1/Progressive/src/test/java/features/ProgressiveHomePage.feature:58"
+          }
+        ]
+      }
+    ]
+  }
+]
